@@ -1,4 +1,4 @@
-import { item } from "../Modulos/item/itemModulo";
+import { item } from "../Modulos/item/itemModulo.js";
 
 
 export function seccion1(){
