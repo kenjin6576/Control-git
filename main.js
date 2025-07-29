@@ -1,15 +1,20 @@
+import { crearheader } from "./Componentes/header/headerComponent.js";
+import { seccion1 } from "./Componentes/seccion1/seccion1Component.js";
+
+
 function seccion(){
 
     let seccion = document.createElement('section');
+
+    //Header
+    seccion.appendChild(crearheader());
+
+    //Seccion
+    seccion.appendChild(seccion1());
+
+   
     
-    let h1 = document.createElement('h1');
-    h1.className = "titulo"
-    h1.innerText = "Hola Mundo"; //Sirve para ejecutar acciones
-    seccion.appendChild(h1); //Hace que seccion se declare como hijo
     
-    let parrafo = document.createElement('p');
-    parrafo.innerText = "Introduccion a javascript";
-    seccion.appendChild(parrafo);
 
     return seccion;
 }
