@@ -1,34 +1,17 @@
-function header (){
-
-let header = document.createElement('header');
+export function header() {
+// Crear el elemento header
+let header = document.createElement("header");
 header.className = "header";
-
-
-
-
-//titulo
-let titulo = document.createElement('titulo');
+// Crear el título
+let titulo = document.createElement("h1");
+titulo.className = "titulo";
+titulo.innerText = "@Yane";
+// Crear el div del logo
+let divLogo = document.createElement("div");
+divLogo.className = "div-logo";
+divLogo.innerText = "🦊";
+// Agregar los elementos al header
 header.appendChild(titulo);
-titulo.innerText = "Kenji";
-titulo.className = "titulo1";
-
-
-//div 
-let div = document.createElement('div');
-header.appendChild(div);
-div.className = "div";
-
-let imagen = document.createElement('img');
-imagen.src = "https://avatars.githubusercontent.com/u/197617968?v=4&size=64"
-div.appendChild(imagen);
-imagen.className = "img";
-
-
-
+header.appendChild(divLogo);
 return header;
-
-
-
 }
-
-export{header}

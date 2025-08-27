@@ -1,25 +1,21 @@
-.titulo1{
-    color: rgba(59, 59, 153, 0.829) ;
-    font-size: 30px;
-
+header{
+height: 6rem;
+border-bottom: 1px solid gray;
+padding: 0 2rem;
+display: grid;
+grid-template-columns: 1fr auto;
+align-items: center;
 }
-
-.div{
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    border-radius: 100%;
-    display: flex;
+.titulo{
+font-size: 2rem;
 }
-
-.header{
-     align-items: center;
-    padding: 0 2rem;
-    display: grid;
-    background-color: gray;
-  grid-template-columns: 1fr auto;
-}
-
-.img {
-    border-radius: 100%;
+.div-logo{
+width: 4rem;
+height: 4rem;
+border: 1px solid black;
+border-radius: 5px;
+font-size: 2.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
 }
